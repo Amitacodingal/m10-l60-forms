@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+</head>
+
+<body>
+
+
+<h1>Forms in html</h1>
+
+    <hr>
+    <div style="margin-left: 10px;">
+        <form action="url" method="post">
+            <fieldset>
+                <legend> General Information</legend>
+
+                Enter Name: <br>
+                <input type="text" name="name" id="name" placeholder="Enter Name" autofocus pattern="[A-Za-z0-9]+">
+                <br>
+                ENter Password: <br>
+                <input type="password" name="password" id="password"> <br>
+
+                Enter Phone Number: <br>
+                <input type="number" name="pnum" id="pnum" autocomplete="on"> <br>
+
+                Enter email-id: <br>
+                <input type="email" name="email" id="email" required> <br>
+
+                Date of Birth: <br>
+                <input type="date" name="bdate" id="bdate" min="2023-1-1" max="2023-12-31"> <br>
+
+                <!-- <input type="datetime" name="date2" id="date2"> -->
+                <input type="datetime-local" name="date2" id="date2">
+<br>
+                Gender:
+
+               
+                <input type="radio" name="gender" id="male"> Male:
+
+               
+                <input type="radio" name="gender" id="female"> Female:
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend> Interests</legend>
+                <select name="outdooe" id="outdoor">
+                    <optgroup label="Outdoor Games:">
+                        <option value="cricket">Cricket</option>
+                        <option value="table tennis">Table Tennis</option>
+                    </optgroup>
+                    <optgroup label="Indoor Games:">
+                        <option value="chess">Chess</option>
+                        <option value="sudoku">Sudoku</option>
+                    </optgroup>
+                </select> <br>
+
+                Upload your Assignment or practices here: <br>
+
+                <input type="file" name="file1" id="file1"> <br>
+
+                Submit your url here: <br>
+                <input type="url" name="url1" id="url1"> <br>
+
+                Give Your prefernces and feedback: <br>
+
+                <textarea name="text1" id="text1" cols="40" rows="10"></textarea>
+                <br>
+
+                What is your preferable color for T-shirt? <br>
+                <input type="text" name="text2" id="text2" list="colors">
+
+                <datalist id="colors">
+                    <option value="red"></option>
+                    <option value="blue"></option>
+                    <option value="yellow"></option>
+                    <option value="light blue"></option>
+                </datalist>
+            </fieldset>
+
+            <input type="submit" value="submit"> <br>
+            <!-- we can use input type image to make a submit button work as a submit button-->
+            <!-- <input type="image" src="" alt=""> <br> -->
+        </form>
+
+    </div>
+
+    <q> That was wonderful day today !!!</q>
+</body>
+
+</html>
